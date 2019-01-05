@@ -1,0 +1,24 @@
+.homepage-background {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background: url(../../assets/minified/7723-min.jpg) center center;
+    background-size: cover;
+    z-index: 1;
+  }
+}
+
+.content {
+  position: relative;
+  height: 100%;
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  z-index: 500;
+}

@@ -1,10 +1,34 @@
-<div class='container-fluid'>
-  <div class='row'>
-    <div class='col-sm-3'>
-      <app-nav-menu></app-nav-menu>
-    </div>
-    <div class='col-sm-9 body-content'>
-      <router-outlet></router-outlet>
-    </div>
+<!--The content below is only a placeholder and can be replaced.-->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 px-md-4 mb-3">
+  <a class="navbar-brand" href="#"><img class="navbar-brand-logo" src="../assets/scissors.png" />{{title}}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a [routerLink]="['/home']" routerLinkActive="active" class="nav-link">
+          <span class="fas fa-home"></span>Home</a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['/services']" routerLinkActive="active" class="nav-link">
+          <span class=" fas services-icon">
+          </span>
+          Services</a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['/shop']" routerLinkActive="active" class="nav-link">
+          <span class="fas fa-shopping-cart"></span>Shop</a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['/contact']" routerLinkActive="active" class="nav-link">
+          <span class="fas fa-user"></span>Contact</a>
+      </li>
+    </ul>
   </div>
+
+</nav>
+<div class="content">
+  <router-outlet></router-outlet>
 </div>

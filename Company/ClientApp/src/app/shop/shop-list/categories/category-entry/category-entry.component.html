@@ -1,0 +1,9 @@
+<ng-container *ngFor="let a of collection">
+  <button class="list-group-item list-group-item-action" (click)="selectOrExpandCategory(a);">Category
+    1</button>
+  <ng-container *ngIf="a.subcategories.length > 0">
+    <div class="list-group list-group-flush">
+      <app-category-entry [collection]="a.subcategories" [parent]="a"></app-category-entry>
+    </div>
+  </ng-container>
+</ng-container>

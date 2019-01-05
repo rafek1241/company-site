@@ -1,0 +1,106 @@
+<div class="container-fluid pt-3">
+  <div class="row">
+    <div class="container">
+      <app-popular-categories></app-popular-categories>
+    </div>
+  </div>
+  <!-- shop-list -->
+  <div class="row justify-content-center">
+    <div class="col-2 p-0">
+      <app-categories></app-categories>
+    </div>
+    <div class="col-8">
+      <section class="shopping-list">
+        <div class="card-columns">
+          <div class="card" *ngFor="let v of [1,2,3,4,5,6,7,5,3,3,3,3,3,3]">
+            <img class="img-responsive card-img-top preview" src="https://picsum.photos/300/300">
+            <div class="card-body text-dark">
+              <div>
+                <h5 class="card-title">
+                  Product
+                </h5>
+                <p class="card-text">This is product description Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Ad quidem neque atque nihil excepturi iure consectetur amet dolore esse quia, architecto culpa
+                  voluptate expedita exercitationem facilis ab corrupti recusandae totam?</p>
+              </div>
+              <div class="w-100">
+                <button class="btn btn-sm btn-primary pull-left">Read more >></button>
+                <button class="btn btn-sm btn-success pull-right">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="col-2 p-0 filter-list">
+      <div class="col">
+        <div class="order-by pt-3">
+          <label class="" for="orderSelect">Order items</label>
+          <select class="form-control" id="orderSelect">
+            <option>Higher to lower</option>
+            <option>Lower to higher</option>
+            <option>Popular first</option>
+          </select>
+        </div>
+        <hr class="row" />
+        <form class="filters">
+          <div class="form-group">
+            <label class="">Price</label>
+            <div class="form-row align-items-center">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="From">
+              </div>
+              <div class="col-1">-</div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="To">
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="form-group">
+            <label for="formGroupExampleInput">Example label</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="vehicle1" value="Bike">
+            <label class="form-check-label" for="formGroupExampleInput">I have a bike</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="vehicle2" value="Car">
+            <label class="form-check-label" for="formGroupExampleInput">I have a car</label>
+          </div>
+          <hr />
+          <div class="form-group">
+            <label for="formGroupExampleInput">Example label</label>
+            <input class="form-control" type="date" name="bday"><br>
+          </div>
+          <input class="form-control" type="number" name="quantity" min="1" max="5">
+          <fieldset class="form-group">
+            <div class="">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" value="male" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  First radio
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" value="female">
+                <label class="form-check-label" for="gridRadios1">
+                  Second radio
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" value="other">
+                <label class="form-check-label" for="gridRadios1">
+                  Other radio
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- .shop-list -->
+
+</div>

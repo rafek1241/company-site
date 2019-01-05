@@ -1,0 +1,44 @@
+.navbar-brand-logo {
+  max-height: 25px;
+  transform: rotate(45deg);
+  margin-right: -10px;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  max-height: 5rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 10000;
+}
+
+.content {
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'fa-haircut-tools';
+  src: url('../assets/font-icons/fa-haircut-tools.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fas {
+  font-size: 1.5rem;
+}
+
+.services-icon {
+
+  font-family: 'fa-haircut-tools';
+  font-weight: normal;
+  font-style: normal;
+
+  &:before {
+    content: '\E800';
+  }
+}
