@@ -1,7 +1,6 @@
 [build]
-  base = "Company/ClientApp/"
-  publish = "Company/ClientApp/dist/ClientApp/"
   command = "npm i && npm run build"
+  publish = "dist/ClientApp/"
 
 
 [[redirects]]
