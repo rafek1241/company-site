@@ -1,7 +1,5 @@
 [build]
   command = "npm i && npm run build"
-  publish = "dist/ClientApp/"
-
 
 [[redirects]]
 from = "https://awesome-bassi-04323e.netlify.com/*"
