@@ -1,6 +1,3 @@
-[build]
-  command = "npm i && npm run build"
-
 [[redirects]]
 from = "https://awesome-bassi-04323e.netlify.com/*"
 to = "/:splat"
