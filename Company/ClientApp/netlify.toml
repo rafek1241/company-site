@@ -1,5 +1,17 @@
+[build]
+  base = "Company/ClientApp/"
+  publish = "Company/ClientApp/dist/ClientApp/"
+  command = "npm i && npm run build"
+
+
 [[redirects]]
-from = "/*"
-to = "/"
+from = "https://awesome-bassi-04323e.netlify.com/*"
+to = "/:splat"
 status = 301
-force = false
+force = true
+
+[[redirects]]
+from = "http://awesome-bassi-04323e.netlify.com/*"
+to = "/:splat"
+status = 301
+force = true
